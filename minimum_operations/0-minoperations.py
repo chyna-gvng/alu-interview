@@ -22,10 +22,11 @@ def minOperations(n):
         raise ValueError("n must be positive")
 
     # Initialize the DP table.
-    dp = [0] * (n + 1)
+    dp = [float("inf")] * (n + 1)
 
     # Fill in the DP table.
-    for i in range(1, n + 1):
+    dp[1] = 0
+    for i in range(2, n + 1):
         dp[i] = min(dp[i - 1] + 1, dp[i // 2] + 1, dp[i // 3] + 1)
 
     return dp[n]
