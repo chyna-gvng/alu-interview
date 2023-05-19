@@ -21,12 +21,12 @@ def minOperations(n):
     carrier = 0
 
     while summation < n:
-        if n % summation == 0:  # Copy when summation is a multiple of n
+        if n % summation == 0:
             carrier = summation
             summation *= 2
             operations += 1
         else:
             summation += carrier
-        operations += 1  # Always paste
+        operations += 1
 
     return operations
