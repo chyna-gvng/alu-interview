@@ -1,0 +1,26 @@
+#!/usr/bin/python3
+def minOperations(n):
+  """
+  Calculates the fewest number of operations needed to result in exactly n H characters in the file.
+
+  Args:
+    n: The number of H characters to reach.
+
+  Returns:
+    The fewest number of operations needed.
+
+  Raises:
+     ValueError: If n is impossible to achieve.
+  """
+
+  if n <= 0:
+    raise ValueError("n must be positive")
+
+  # Initialize the DP table.
+  dp = [0] * (n + 1)
+
+  # Fill in the DP table.
+  for i in range(1, n + 1):
+    dp[i] = min(dp[i - 1] + 1, dp[i // 2] + 1, dp[i // 3] + 1)
+
+  return dp[n]
