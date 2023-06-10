@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Python script that calculates how much water will be retained after it rains
+    Python script that calculates how much water is retained after it rains
 """
 
 
