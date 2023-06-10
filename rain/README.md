@@ -1,3 +1,3 @@
 ### Interview
-Readme file for the *minimum_operations* directory.  
+Readme file for the *rain* directory.  
 Highlight: Interview
