@@ -3,6 +3,7 @@
     0-rain
 """
 
+
 def rain(walls):
     """
     Parameters:
