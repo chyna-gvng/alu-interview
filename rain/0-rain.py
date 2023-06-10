@@ -25,7 +25,7 @@ def rain(walls):
 
       # Find the index of the first wall that is lower than the current wall.
       index = i
-      while index < len(walls) and walls[index] >= walls[i]:
+      while index < len(walls) or walls[index] >= walls[i]:
         index += 1
 
       # Check if the index is less than the length of the list.
