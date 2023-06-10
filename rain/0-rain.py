@@ -2,6 +2,7 @@
 """
     0-rain
 """
+
 def rain(walls):
   """
   Calculates the amount of water retained after it rains.
@@ -24,11 +25,13 @@ def rain(walls):
 
       # Find the index of the first wall that is lower than the current wall.
       index = i
-      while walls[index] >= walls[i]:
+      while index < len(walls) and walls[index] >= walls[i]:
         index += 1
 
-      # Calculate the amount of water that can be retained.
-      water_retained += (index - i) * walls[i]
+      # Check if the index is less than the length of the list.
+      if index < len(walls):
+        # Calculate the amount of water that can be retained.
+        water_retained += (index - i) * walls[i]
 
   # Return the amount of water retained.
   return water_retained
