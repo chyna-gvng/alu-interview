@@ -6,11 +6,11 @@
 
 def rain(walls):
     """
-    Parameters:
-        walls: ist of non-negative integers
+        Parameters:
+            walls: ist of non-negative integers
 
-    Returns:
-        int: total amount of rainwater collected
+        Returns:
+            int: amount of rainwater collected
     """
     if walls is None:
         return 0
