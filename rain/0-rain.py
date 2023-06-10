@@ -6,9 +6,7 @@
 
 def rain(walls):
     """
-        Parameters:
-            walls: ist of non-negative integers
-
+        Function that calculates how much water will be retained after it rains
         Returns:
             int: amount of rainwater collected
     """
