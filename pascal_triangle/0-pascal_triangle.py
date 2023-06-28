@@ -2,6 +2,8 @@
 """
     0-pascal_triangle.py
 """
+
+
 def pascal_triangle(n):
     """
         Return: Pascal’s triangle of n
